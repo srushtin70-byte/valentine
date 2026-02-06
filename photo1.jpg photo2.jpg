@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Forever 🧿</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #fdf5e6; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .serif { font-family: 'DM+Serif+Display', serif; }
+        .pink-card { background-color: #fbcfe8; border-radius: 2.5rem; }
+        
+        /* Polaroid Styling */
+        .polaroid { 
+            background: white; 
+            padding: 12px 12px 35px 12px; 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
+            transition: all 0.4s ease;
+        }
+        .polaroid img { width: 100%; height: 180px; object-fit: cover; border-radius: 2px; }
+        .polaroid:hover { transform: scale(1.05) rotate(0deg) !important; z-index: 10; }
+
+        /* Animation for Petals */
+        .petal {
+            position: fixed; top: -10%; color: #fbcfe8;
+            user-select: none; z-index: -1; pointer-events: none;
+            animation: fall linear forwards;
+        }
+        @keyframes fall {
+            to { transform: translateY(110vh) rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <div class="pink-card max-w-4xl mx-auto p-8 md:p-12 mb-12 shadow-2xl relative">
+        <h1 class="serif text-3xl md:text-4xl text-center text-gray-800 mb-10">Look at this cutie 😭</h1>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="polaroid -rotate-3">
+                <img src="PHOTO_1_URL" alt="Sweet Hello">
+                <p class="text-center italic text-sm mt-3 text-gray-700 serif">Sweet Hello</p>
+            </div>
+            <div class="polaroid rotate-2">
+                <img src="PHOTO_2_URL" alt="True Smile">
+                <p class="text-center italic text-sm mt-3 text-gray-700 serif">True Smile</p>
+            </div>
+            <div class="polaroid -rotate-1">
+                <img src="PHOTO_3_URL" alt="Perfect Day">
+                <p class="text-center italic text-sm mt-3 text-gray-700 serif">Perfect Day</p>
+            </div>
+            <div class="polaroid rotate-3">
+                <img src="PHOTO_4_URL" alt="Only Us">
+                <p class="text-center italic text-sm mt-3 text-gray-700 serif">Only Us</p>
+            </div>
+            <div class="polaroid -rotate-2">
+                <img src="PHOTO_5_URL" alt="My Home">
+                <p class="text-center italic text-sm mt-3 text-gray-700 serif">My Home</p>
+            </div>
+            <div class="polaroid rotate-1">
+                <img src="PHOTO_6_URL" alt="Forever Us">
+                <p class="text-center italic text-sm mt-3 text-gray-700 serif">Forever Us</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pink-card max-w-4xl mx-auto p-10 mb-12 shadow-2xl text-center">
+        <h2 class="serif text-3xl text-gray-800 mb-10">Something for You</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white/60 p-8 rounded-3xl hover:bg-white transition-all cursor-pointer group">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZuJmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/26hpKz9XW7vK8L09W/giphy.gif" class="w-16 mx-auto mb-4" alt="Gift 1">
+                <p class="font-bold text-gray-700">Gift 1</p>
+            </div>
+            <div class="bg-white/60 p-8 rounded-3xl hover:bg-white transition-all cursor-pointer">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZuJmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/L40b3sXJp8vVvK0v4v/giphy.gif" class="w-16 mx-auto mb-4" alt="Gift 2">
+                <p class="font-bold text-gray-700">Gift 2</p>
+            </div>
+            <div class="bg-white/60 p-8 rounded-3xl hover:bg-white transition-all cursor-pointer">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZuJmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/3o7TKVUn7iM8FMEU24/giphy.gif" class="w-16 mx-auto mb-4" alt="Gift 3">
+                <p class="font-bold text-gray-700">Gift 3</p>
+            </div>
+        </div>
+        <button class="mt-10 bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-full text-xs font-black tracking-[0.2em] transition-transform active:scale-95 shadow-lg">FINALLY... ➔</button>
+    </div>
+
+    <div class="pink-card max-w-4xl mx-auto p-10 shadow-2xl text-center">
+        <h2 class="serif text-3xl md:text-4xl text-gray-800 mb-8">You are my forever 🧿❤️!</h2>
+        <div class="max-w-[300px] mx-auto bg-black rounded-2xl overflow-hidden shadow-2xl mb-8 border-4 border-white">
+            <video controls class="w-full aspect-[9/16]">
+                <source src="YOUR_VIDEO_URL.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="max-w-xl mx-auto text-gray-800 leading-relaxed text-lg italic serif px-4">
+            <p class="mb-4">I love you more than words can say. ❤️</p>
+            <p>No matter where life takes us, my heart will always choose you. Thank you for being my peace, my smile, my love. This Valentine's Day and every day after, I'm grateful to call you mine.</p>
+        </div>
+    </div>
+
+    <script>
+        // Floating Petals Script
+        function createPetal() {
+            const petal = document.createElement('div');
+            petal.innerHTML = '🌸';
+            petal.classList.add('petal');
+            petal.style.left = Math.random() * 100 + 'vw';
+            petal.style.animationDuration = Math.random() * 3 + 2 + 's';
+            petal.style.fontSize = Math.random() * 10 + 10 + 'px';
+            document.body.appendChild(petal);
+            setTimeout(() => petal.remove(), 5000);
+        }
+        setInterval(createPetal, 300);
+    </script>
+</body>
+</html>
